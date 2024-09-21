@@ -13,6 +13,8 @@ company = st.text_input("Company of the Car", "Enter company name")
 kms_driven = st.number_input("KMs Driven by the Car", min_value=0, step=1000, value=10000)
 fuel_type = st.selectbox("Fuel Type", ["Petrol", "Diesel","LPG"])
 year = st.number_input("Year of Manufacture", min_value=1990, max_value=2024, step=1, value=2015)
+name = name.title()
+company = company.title()
 
 # Button for prediction
 if st.button("Predict"):
