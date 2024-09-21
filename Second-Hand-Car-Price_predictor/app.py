@@ -1,10 +1,10 @@
 import joblib as jb
 import pandas as pd
 import streamlit as st
-model = jb.load("a_model.pkl")
-encoded_name = jb.load("encoded_name.pkl")
-encoded_company = jb.load("encoded_company.pkl")
-encoded_fuel = jb.load("encoded_fuel.pkl")
+model = jb.load("Second-Hand-Car-Price_predictor/a_model.pkl")
+encoded_name = jb.load("Second-Hand-Car-Price_predictor/encoded_name.pkl")
+encoded_company = jb.load("Second-Hand-Car-Price_predictor/encoded_company.pkl")
+encoded_fuel = jb.load("Second-Hand-Car-Price_predictor/encoded_fuel.pkl")
 st.title("Second-Hand Car Price Prediction App")
 
 # Create input fields for user inputs
